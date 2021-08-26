@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="http://www.wyzhp.cn">
   <title>Nginx文件下载服务器 | 白衣不染尘</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="nginx安装Centos安装 1yum -y install nginx Ubuntu安装 1apt -y install nginx 配置创建文件存储目录download，在download目录下添加提供下载的文件 12mkdir &#x2F;etc&#x2F;nginx&#x2F;downloadcp ~&#x2F;nginx_install.sh &#x2F;etc&#x2F;nginx&#x2F;download&#x2F;  #上传一个测试文件 配置nginx配置">
+  <meta name="description" content="nginx安装Centos安装 1yum -y install nginx">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Nginx文件下载服务器">
 <meta property="og:url" content="http://www.wyzhp.cn/2021/08/26/Nginx%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
 <meta property="og:site_name" content="白衣不染尘">
-<meta property="og:description" content="nginx安装Centos安装 1yum -y install nginx Ubuntu安装 1apt -y install nginx 配置创建文件存储目录download，在download目录下添加提供下载的文件 12mkdir &#x2F;etc&#x2F;nginx&#x2F;downloadcp ~&#x2F;nginx_install.sh &#x2F;etc&#x2F;nginx&#x2F;download&#x2F;  #上传一个测试文件 配置nginx配置">
+<meta property="og:description" content="nginx安装Centos安装 1yum -y install nginx">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/fc8d741fead74de5831d9c970efe56d9.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_Q1NETiBA5peg5b-n5p2C6LSn6ZO6,size_30,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/b8830ce385e244a184decb1f3f0d8106.png">
@@ -21,7 +21,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/1c24850bb1ff4c14b12243be85c8f63e.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/78605c17374b4e25937fcb26642b1748.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_Q1NETiBA5peg5b-n5p2C6LSn6ZO6,size_34,color_FFFFFF,t_70,g_se,x_16">
 <meta property="article:published_time" content="2021-08-26T08:28:49.000Z">
-<meta property="article:modified_time" content="2021-08-26T08:29:55.070Z">
+<meta property="article:modified_time" content="2021-08-26T08:51:35.559Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/fc8d741fead74de5831d9c970efe56d9.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_Q1NETiBA5peg5b-n5p2C6LSn6ZO6,size_30,color_FFFFFF,t_70,g_se,x_16">
@@ -188,6 +188,8 @@
       
         <h4 id="nginx安装"><a href="#nginx安装" class="headerlink" title="nginx安装"></a>nginx安装</h4><p>Centos安装</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install nginx</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
 <p>Ubuntu安装</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt -y install nginx</span><br></pre></td></tr></table></figure>
 <h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>创建文件存储目录download，在download目录下添加提供下载的文件</p>
