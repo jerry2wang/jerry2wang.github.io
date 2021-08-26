@@ -6,17 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.wyzhp.cn">
-  <title>Archives: 2021 | 白衣不染尘</title>
+  <title>Nginx文件下载服务器 | 白衣不染尘</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录学习过程的点点滴滴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="白衣不染尘">
-<meta property="og:url" content="http://www.wyzhp.cn/archives/2021/index.html">
+  <meta name="description" content="nginx安装Centos安装 1yum -y install nginx Ubuntu安装 1apt -y install nginx 配置创建文件存储目录download，在download目录下添加提供下载的文件 12mkdir &#x2F;etc&#x2F;nginx&#x2F;downloadcp ~&#x2F;nginx_install.sh &#x2F;etc&#x2F;nginx&#x2F;download&#x2F;  #上传一个测试文件 配置nginx配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nginx文件下载服务器">
+<meta property="og:url" content="http://www.wyzhp.cn/2021/08/26/Nginx%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
 <meta property="og:site_name" content="白衣不染尘">
-<meta property="og:description" content="记录学习过程的点点滴滴">
+<meta property="og:description" content="nginx安装Centos安装 1yum -y install nginx Ubuntu安装 1apt -y install nginx 配置创建文件存储目录download，在download目录下添加提供下载的文件 12mkdir &#x2F;etc&#x2F;nginx&#x2F;downloadcp ~&#x2F;nginx_install.sh &#x2F;etc&#x2F;nginx&#x2F;download&#x2F;  #上传一个测试文件 配置nginx配置">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/fc8d741fead74de5831d9c970efe56d9.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_Q1NETiBA5peg5b-n5p2C6LSn6ZO6,size_30,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/b8830ce385e244a184decb1f3f0d8106.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/65c71b30365c4f579e64b5f061ace189.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/1c24850bb1ff4c14b12243be85c8f63e.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/78605c17374b4e25937fcb26642b1748.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_Q1NETiBA5peg5b-n5p2C6LSn6ZO6,size_34,color_FFFFFF,t_70,g_se,x_16">
+<meta property="article:published_time" content="2021-08-26T08:28:49.000Z">
+<meta property="article:modified_time" content="2021-08-26T08:29:55.070Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/fc8d741fead74de5831d9c970efe56d9.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_Q1NETiBA5peg5b-n5p2C6LSn6ZO6,size_30,color_FFFFFF,t_70,g_se,x_16">
   
     <link rel="alternative" href="/atom.xml" title="白衣不染尘" type="application/atom+xml">
   
@@ -158,76 +166,181 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Nginx文件下载服务器" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Nginx文件下载服务器
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/26/Nginx%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="archive-article-date">
+
+        
+        <a href="/2021/08/26/Nginx%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="archive-article-date">
   	<time datetime="2021-08-26T08:28:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-26</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/26/Nginx%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E6%9C%8D%E5%8A%A1%E5%99%A8/">Nginx文件下载服务器</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="nginx安装"><a href="#nginx安装" class="headerlink" title="nginx安装"></a>nginx安装</h4><p>Centos安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install nginx</span><br></pre></td></tr></table></figure>
+<p>Ubuntu安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt -y install nginx</span><br></pre></td></tr></table></figure>
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>创建文件存储目录download，在download目录下添加提供下载的文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir /etc/nginx/download</span><br><span class="line">cp ~/nginx_install.sh /etc/nginx/download/  <span class="comment">#上传一个测试文件</span></span><br></pre></td></tr></table></figure>
+<p>配置nginx配置文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/nginx/nginx.conf</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">user www-data;</span><br><span class="line">worker_processes 2;</span><br><span class="line">pid /run/nginx.pid;</span><br><span class="line"> </span><br><span class="line">error_log /var/<span class="built_in">log</span>/nginx/error.log;</span><br><span class="line">include /usr/share/nginx/modules/*.conf;</span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections 1024;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">http &#123;</span><br><span class="line">    log_format  main  <span class="string">&#x27;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#x27;</span></span><br><span class="line">                      <span class="string">&#x27;$status $body_bytes_sent &quot;$http_referer&quot; &#x27;</span></span><br><span class="line">                      <span class="string">&#x27;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#x27;</span>;</span><br><span class="line">proxy_cache_path /etc/nginx/cache levels=1:2 keys_zone=cache_one:200m inactive=1d max_size=512m;</span><br><span class="line">    access_log  /var/<span class="built_in">log</span>/nginx/access.log  main;</span><br><span class="line">    sendfile            on;</span><br><span class="line">    tcp_nopush          on;</span><br><span class="line">    tcp_nodelay         on;</span><br><span class="line">    keepalive_timeout   65;</span><br><span class="line">    types_hash_max_size 2048;</span><br><span class="line">    include             /etc/nginx/mime.types;</span><br><span class="line">    default_type        application/octet-stream;</span><br><span class="line">    <span class="comment">#include /etc/nginx/conf.d/*.conf;</span></span><br><span class="line">    server &#123;</span><br><span class="line">        listen       18907;  <span class="comment">#指定端口，访问的时候需要，推荐五位端口</span></span><br><span class="line">        root   /usr/share/nginx/html ;</span><br><span class="line">        proxy_cache_key  $host<span class="variable">$uri</span>;</span><br><span class="line">        proxy_set_header  Host  <span class="variable">$host</span>;</span><br><span class="line">        proxy_set_header    X-real-ip <span class="variable">$remote_addr</span>;</span><br><span class="line">        proxy_set_header  X-Forwarded-For  <span class="variable">$remote_addr</span>;</span><br><span class="line">        location / &#123;</span><br><span class="line">              root /etc/nginx/download;   <span class="comment"># 指定实际目录绝对路径</span></span><br><span class="line">              autoindex on;                   <span class="comment"># 开启目录浏览功能</span></span><br><span class="line">              autoindex_exact_size off;       <span class="comment"># 关闭详细文件大小统计，让文件大小显示MB，GB单位，默认为b</span></span><br><span class="line">              autoindex_localtime on;         <span class="comment"># 开启以服务器本地时区显示文件修改日期</span></span><br><span class="line">              charset utf-8,gbk;              <span class="comment"># 显示中文</span></span><br><span class="line">              <span class="comment">#limit_conn one 8;              # 并发数配置</span></span><br><span class="line">              <span class="comment">#limit_rate 100k;               # 单线程最大下载速度kb</span></span><br><span class="line">       &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>检测语法并重启nginx</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -t &amp;&amp; systemctl restart nginx</span><br></pre></td></tr></table></figure>
+<p>浏览器请求测试</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip add  <span class="comment">#查看本机的ip</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/fc8d741fead74de5831d9c970efe56d9.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_Q1NETiBA5peg5b-n5p2C6LSn6ZO6,size_30,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>浏览器打开192.168.10.36:18907<br><img src="https://img-blog.csdnimg.cn/b8830ce385e244a184decb1f3f0d8106.png" alt="在这里插入图片描述"><br><strong>这里值得说的是，nginx下载服务支持 wget 下载，支持断点续传</strong></p>
+<p>普通用户的需求基本可以满足了，如果需要提升安全性，继续往下看</p>
+<h4 id="增加用户名密码验证"><a href="#增加用户名密码验证" class="headerlink" title="增加用户名密码验证"></a>增加用户名密码验证</h4><h5 id="使用htpasswd命令生成用户名密码"><a href="#使用htpasswd命令生成用户名密码" class="headerlink" title="使用htpasswd命令生成用户名密码"></a>使用htpasswd命令生成用户名密码</h5><p>Centos安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install httpd</span><br></pre></td></tr></table></figure>
+<p>Ubuntu在没有安装的情况下，会给出相应的提示</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install apache2-utils</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/65c71b30365c4f579e64b5f061ace189.png" alt="在这里插入图片描述"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">htpasswd -c /etc/nginx/passwd <span class="built_in">test</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/1c24850bb1ff4c14b12243be85c8f63e.png"><br>/etc/nginx/passwd是生成密码文件的路径，然后test是用户名，也可以根据需要设置其它用户名。运行命令后，输入两次密码，就会提示为用户test添加密码。</p>
+<h5 id="nginx认证配置"><a href="#nginx认证配置" class="headerlink" title="nginx认证配置"></a>nginx认证配置</h5><p>配置文件中的server加上认证配置auth_basic 和 auth_basic_user_file即可</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen       18907;</span><br><span class="line">    ......</span><br><span class="line">    <span class="comment"># 需要添加的内容</span></span><br><span class="line">    auth_basic <span class="string">&quot;Please input password&quot;</span>; <span class="comment"># 验证时的提示信息</span></span><br><span class="line">    auth_basic_user_file /etc/nginx/passwd; <span class="comment"># 认证文件</span></span><br><span class="line">    ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="测试效果"><a href="#测试效果" class="headerlink" title="测试效果"></a>测试效果</h4><p>浏览器打开192.168.10.36:18907就会弹窗让输入用户名密码登录才能正常访问<br><img src="https://img-blog.csdnimg.cn/78605c17374b4e25937fcb26642b1748.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_Q1NETiBA5peg5b-n5p2C6LSn6ZO6,size_34,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>使用wget下载测试，需要使用–user和–password参数</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://192.168.10.36:18907/nginx_install.sh --user=<span class="built_in">test</span> --password=123456</span><br></pre></td></tr></table></figure>
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://www.wyzhp.cn/2021/08/26/Nginx%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E6%9C%8D%E5%8A%A1%E5%99%A8/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/06/22/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B/" class="archive-article-date">
-  	<time datetime="2021-06-22T10:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-22</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/06/22/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">写博客的初衷</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/06/22/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B/">写博客的初衷</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -253,8 +366,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
